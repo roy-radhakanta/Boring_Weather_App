@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        // function init(){
+        //     let broswer = "Chrome";
+        //     function alrt(){
+        //         alert(broswer);
+        //     }
+        //    alrt();
+        // }
+
+        // init();
+
+//         function makeFunc() {
+//             var name = 'Mozilla';
+//             function displayName() {
+//                 alert(name);
+//             }
+//             return displayName;
+//         }
+
+// var myFunc = makeFunc();
+// console.log(myFunc);
+// myFunc();
+
+
+function additionAdd(x) {
+    return function(y){
+        return x + y;
+    }
+};
+
+var adRes = additionAdd(12);
+console.log(adRes(2));
+
+    </script>
+</body>
+</html>

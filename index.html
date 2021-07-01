@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Exp</title>
+</head>
+<body>
+	
+<style>body{ padding: 0; margin: 0; box-sizing: border-box; display: flex; align-items: center; justify-content: center; height: 100vh; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; background: url('ui.jpg'); background-size: cover; background-repeat: no-repeat; background-position: center; color: #fff} .the__div { width: 50rem; margin: auto; border-radius: 10px; backdrop-filter: blur(13px); background: #c6e6fd3d; } .center-text{ text-align: center} .the__div--weather-info{ padding: 1rem 1.5rem} .flex{ display: flex; align-items: center; justify-content: space-around} .w-30{ width: 30%} .w-70{ width: 70%} .the__div--center h1{ text-transform: uppercase; margin: 4% 0} p, h1, h2, h3, h4{ margin: 0} #temperatureWeather{ font-size: 6rem; position: relative} .widget{ padding: 2% 5% 3%; width: 20%; text-align: center; background: #ffffff2b; border-radius: 10px} .widget h3{ font-size: 2rem} .weatherInfoOt { background: #ffffff2b; padding: 5%; border-radius: 10px; font-size: 1.1em; font-weight: 200; } .widget img{ height: 6rem; width: auto} .sme-info img{ width: 1.3rem; margin-right: 0.4rem} #Capa_1{ fill: #fff} #temperatureWeather::after{ content: ''; display: block; height: 1.3rem; width: 1.3rem; position: absolute; right: 6rem; border-radius: 50%; top: 1rem; background-color: #fff} </style>
+
+	<div class="the__div">
+		<div class="the__div--center center-text">
+			<h1>Boaring Weather</h1>
+		</div>
+		<div class="the__div--weather-info flex">
+			<div class="w-30">
+				<p id="location"> <svg id="Capa_1" enable-background="new 0 0 512 512" height="15" viewBox="0 0 512 512" width="15" xmlns="http://www.w3.org/2000/svg"><g><path d="m243.519 505.32c2.782 4.173 7.466 6.68 12.481 6.68s9.699-2.506 12.481-6.68c35.499-53.247 87.786-119.008 124.222-185.889 29.134-53.476 43.297-99.085 43.297-139.431 0-99.252-80.748-180-180-180s-180 80.748-180 180c0 40.346 14.163 85.955 43.297 139.431 36.409 66.83 88.796 132.752 124.222 185.889zm12.481-475.32c82.71 0 150 67.29 150 150 0 35.204-12.967 76.118-39.641 125.079-31.407 57.649-76.225 116.128-110.359 165.29-34.129-49.155-78.95-107.638-110.359-165.29-26.674-48.961-39.641-89.875-39.641-125.079 0-82.71 67.29-150 150-150z"/><path d="m256 270c49.626 0 90-40.374 90-90s-40.374-90-90-90-90 40.374-90 90 40.374 90 90 90zm0-150c33.084 0 60 26.916 60 60s-26.916 60-60 60-60-26.916-60-60 26.916-60 60-60z"/></g></svg> Kolkata</p>
+				<p id="nowTime">2:16AM</p>
+				<small id="todayDate">Friday - 01-July-2021</small>
+				<h3 id="temperatureWeather">20c</h3>
+				
+				<div class="weatherInfoOt flex">
+					<p class="flex sme-info"> <img src="weather-status/heavy-rain.svg" alt=""><span id="precipitation">20c</span> </p>
+					<p class="flex sme-info"> <img src="wind.svg" alt=""><span id="windSpeed">3kph</span> </p>
+				</div>
+			</div>
+			<div class="w-70 flex">
+				<div class="widget">
+					<img src="weather-status/heavy-rain.svg" alt="">
+					<p>Tommrow</p>
+					<h3>32c</h3>
+					<p>Partly Cloudy</p>
+				</div>
+				<div class="widget">
+					<img src="weather-status/partly-cloudy.svg" alt="">
+					<p>02-Jul-2021</p>
+					<h3>32c</h3>
+					<p>Partly Cloudy</p>
+				</div>
+				<div class="widget">
+					<img src="weather-status/windy.svg" alt="">
+					<p>03-Jul-2021</p>
+					<h3>32c</h3>
+					<p>Partly Cloudy</p>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<script>
+		// var firstFunction = function(){
+		// 	setTimeout(()=>{console.log('Hiiiiiiii')}, 2000);
+		// }
+		// var secondFunction = function(){
+		// 	firstFunction();
+		// 	console.log('Second');
+		// }
+
+		// secondFunction();
+
+
+		// function getRecipe() {
+		// 	setTimeout(()=>{
+		// 		const recipeID = [523, 883, 432, 974];
+		// 		console.log(recipeID);
+
+		// 		setTimeout(id => {
+		// 			const recipe = {title: 'Fresh Pasta', ingradient: 'Tomato'};
+		// 			console.log(`${id}: ${recipe.title} is Made of ${recipe.ingradient}`);
+
+		// 				setTimeout(ingrd => {
+		// 					const recipe2 = {title: 'Tomato Katchup', ingradient: 'Tomato'};
+		// 					console.log(`${ingrd}: ${recipe2.title}`);
+		// 				}, 1500, recipe.ingradient);
+
+		// 		}, 1000, recipeID[2]);
+
+		// 	}, 1500);
+
+			
+		// }
+
+		// getRecipe();
+
+
+		// const getIDs = new Promise((resolve, reject) => {
+		// 	setTimeout(() => {
+		// 		resolve([432, 555, 888, 520]);
+		// 	}, 1500);			
+		// });
+
+
+		// getIDs
+		// .then(IDs => {
+		// 	console.log(IDs);
+		// }); 
+
+// ///////////////////////////////////////////////////////
+
+		// const getIDs = new Promise((resolve, reject) => {
+		// 	setTimeout(()=>{
+		// 		resolve([44, 22, 33]);
+		// 		}, 1500);
+		// });
+
+		// const idBasedRec = id => {
+		// 	return new Promise((resolve, reject)=>{
+		// 		setTimeout(id => {
+		// 			resolve(`${id}:what is id`); 
+		// 		}, 1500, id);
+		// 	});
+		// };
+		
+		// getIDs
+		// .then(id => {
+		// 	console.log(id); 
+		// 	return idBasedRec(id[0]);
+		// })
+		// .then(resp => {
+		// 	console.log(resp);
+		// })
+
+		// async function getAll(){
+		// 	const idsx = await getIDs;
+		// 	console.log(idsx);
+		// 	const res = await idBasedRec(idsx[2]);
+		// 	console.log(res);
+		// }
+
+		// getAll();
+
+
+
+// function getWeather(woeid){
+// 	fetch(`https://cors-anywhere.herokuapp.com/https://www.metaweather.com/api/location/${woeid}/`)
+// 			.then(result => {
+// 				return result.json();
+// 			})
+// 			.then(data => {
+// 				// console.log(data);
+// 				const today = data.consolidated_weather[0];
+// 				console.log(`Temperature in ${data.title} today stay betwwen ${today.min_temp} and ${today.max_temp}`);
+// 			})
+// 			.catch(error => {
+// 				console.log(error);
+// 			});
+// }
+
+// getWeather(2295386);
+// getWeather(44418);
+
+
+async function getLatLong(lat, long){
+	try{
+	const forLatLong = await fetch(`https://cors-anywhere.herokuapp.com/https://www.metaweather.com/api/location/search/?lattlong=${lat},${long}`);
+	const latilong = await forLatLong.json();
+	return latilong;
+	}
+	catch(error){
+		console.log (error);
+	}
+}
+
+async function getWeatherAw(woeid){
+	try{
+	const weatherD = await fetch(`https://cors-anywhere.herokuapp.com/https://www.metaweather.com/api/location/${woeid}/`);
+	const result = await weatherD.json();
+	return result;
+	}
+	catch(error){
+		console.log (error);
+	}
+}
+
+
+
+let latlong = navigator.geolocation.getCurrentPosition(see);
+
+ function see(pod){
+	let dataWe; 
+	getLatLong(pod.coords.latitude, pod.coords.longitude).then(data => {
+	dataWe = data;
+	getCoordGvRes(dataWe[0].woeid);
+});
+}
+
+var getCoordGvRes = function(woeid){
+	let dataRes;
+	getWeatherAw(woeid).then(weather => {
+			dataRes = weather;
+			console.log(dataRes);
+			
+		});
+}
+
+
+	</script>
+</body>
+</html>
